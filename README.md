@@ -59,3 +59,8 @@ python amort.py
 ```
 
 The app should be viewable by a local web browswer at http://localhost:8080/
+
+To run unit tests:
+```
+python tests.py
+```
