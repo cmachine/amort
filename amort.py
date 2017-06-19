@@ -114,7 +114,6 @@ def compound(principal, rate):
 
 # determine payment amounts
 def make_payment(principal, unpaid_interest, int_pay, pay_per_int):
-    print "make payment {0}, {1}, {2}, {3}".format(principal, unpaid_interest, int_pay, pay_per_int)
 
     # adjust payment amount to be per pay period instead of interest period
     payment = round(int_pay / pay_per_int, 2)
@@ -176,7 +175,6 @@ def calculate():
 
     # calculate the recurring payment amount
     int_pay = pmt_per_int(principal, rate_per_period, len(int_dates))
-    print "payment: " + str(int_pay)
 
     installments = []
     payment_num = 1
@@ -195,7 +193,6 @@ def calculate():
         if current_date in pay_dates:
 
             installment, principal, unpaid_interest = make_payment(principal, unpaid_interest, int_pay, pay_per_int)
-            print "return {0}, {1}, {2}".format(installment, principal, unpaid_interest)
             installment['number'] = payment_num
             installment['pay_date'] = current_date
             installments.append(installment)
@@ -209,4 +206,5 @@ def calculate():
 if __name__ == "__main__":
     app.debug = True
     app.run(host='0.0.0.0', port=8080)
+
 
