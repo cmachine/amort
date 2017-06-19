@@ -6,12 +6,12 @@ A simple Flask app to calculate a loan's amortization schedule.
 
 Configuration steps:
 
-1. Clone the project:
+Clone the project:
 ```
 https://github.com/cmachine/amort.git
 ```
 
-2. Environment requires python 2.7
+Environment requires python 2.7
 
 To check python version:
 ```
@@ -35,7 +35,7 @@ Mac OSX (using Homebrew):
 brew install python
 ```
 
-3. You will also need some python module dependencies. The easiest and best way to install these is using pip. pip should be installed already. 
+You will also need some python module dependencies. The easiest and best way to install these is using pip. pip should be installed already. 
 
 To check, run 
 ```
@@ -53,9 +53,9 @@ Use pip to install dependencies. Run the following from this repo's directory:
 pip install -r requirements.txt
 ```
 
-4. Start the app by running amort.py:
+Start the app by running amort.py:
 ```
 python amort.py
 ```
 
-5. The app should be viewable by a local web browswer at http://localhost:8080/
+The app should be viewable by a local web browswer at http://localhost:8080/
