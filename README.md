@@ -40,3 +40,14 @@ Then run
 ```
 python get-pip.py
 ```
+Use pip to install dependencies. Run the following from this repo's directory:
+```
+pip install -r requirements.txt
+```
+
+Start the app by running amort.py:
+```
+python amort.py
+```
+
+The app should be viewable by a local web browswer at http://localhost:8080/
